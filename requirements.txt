@@ -1,0 +1,6 @@
+mcp
+setuptools
+uv
+asyncio
+pytest
+pytest-asyncio

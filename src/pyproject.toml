@@ -1,0 +1,36 @@
+[project]
+name = "mcp_weather_service_stdio"
+version = "0.1.0"
+description = "Demo STDIO MCP server for Weather"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp", # model_context_server
+    "uv",
+    "asyncio",
+    "pytest-asyncio",
+    "pytest"
+]
+authors = [
+    {name = "Joe Ours"}
+]
+
+readme = "README.MD"
+license = { text = "MIT" }
+keywords = ["gpt", "claude", "agents", "ai", "centric", "mcp", "model", "context", "server", "protocol", "service", "stdio"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["mcp_weather_service_stdio"]
+
+[project.scripts]
+mcp_weather_service = "mcp_weather_service_stdio:cli_main"
+
+
+
+
+
+
